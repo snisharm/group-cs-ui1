@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script type ="text/javascript" src ="../shared/scripts/angular.min.js"></script>
+<script src="./select-card-controller.js"></script>
+<script type ="text/javascript" src ="../shared/tab-panel/tab-panel-controller.js"></script>
+<body>
+
+<p>Try to change the names.</p>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+<h1>Credit card activation</h1>
+
+<div ng-include="'tab-panel-template.html'"></div>
+
+</div>
+</body>
+</html>
